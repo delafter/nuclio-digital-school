@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
+    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}> 
       <div className="navbar-logo" onClick={handleHome}>
         <img
           style={{ width: "60px", height: "50px" }}

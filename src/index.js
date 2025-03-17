@@ -12,6 +12,8 @@ import Master from "./views/Master.jsx";
 import Faculty from "./views/Faculty.jsx";
 import Content from "./views/Content.jsx";
 import CareerTalent from "./views/CareerTalent.jsx";
+import Button from "./components/Button/Button.jsx";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,7 +30,9 @@ root.render(
         <Route path="/content" element={<Content />} />
         <Route path="/career-talent" element={<CareerTalent />} />
       </Routes>
+      <Button />
     </Router>
+  
   </React.StrictMode>
 );
 

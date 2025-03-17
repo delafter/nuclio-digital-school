@@ -7,9 +7,12 @@ import Faculty from "./views/Faculty";
 import Content from "./views/Content";
 import CareerTalent from "./views/CareerTalent";
 
+
 function App() {
   return (
+   
     <div className="App">
+      
       <div id="school">
         <School />
       </div>
