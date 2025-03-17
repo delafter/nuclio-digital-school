@@ -87,7 +87,7 @@ body {
 }
 
 .navbar.hide {
-  transform: translateY(-70%); 
+  transform: translateY(-80%); 
   transition: transform 0.5s;
 
 }
