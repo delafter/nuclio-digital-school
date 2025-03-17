@@ -1,8 +1,9 @@
 import React from "react";
+import "../styles/CareerTalent.css";
 
 const CareerTalent = () => {
   return (
-    <div>
+    <div className="career-talent-container">
       <h1>Career Talent</h1>
       <p>Welcome to the Career Talent page!</p>
     </div>
