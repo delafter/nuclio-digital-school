@@ -85,3 +85,15 @@ body {
 .navbar-button {
   font-family: 'Poppins', sans-serif !important;
 }
+
+.navbar.hide {
+  transform: translateY(-70%); 
+  transition: transform 0.5s;
+
+}
+
+
+.navbar.show {
+  transform: translateY(0);
+  transition: transform 0.5s;
+}

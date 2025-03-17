@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [showNavbar, setShowNavbar] = useState(true);
+  let lastScrollY = 0;
+
+  // Manejar el scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowNavbar(false); // Ocultar navbar al hacer scroll hacia abajo
+      } else {
+        setShowNavbar(true); // Mostrar navbar al hacer scroll hacia arriba
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavigation = (path) => {
     if (window.location.pathname === "/login" || window.location.pathname === "/join-now") {
@@ -16,11 +34,11 @@ const Navbar = () => {
   };
 
   const handleHome = () => {
-   window.location.href = "/";
+    window.location.href = "/";
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
       <div className="navbar-logo" onClick={handleHome}>
         <img
           style={{ width: "60px", height: "50px" }}
@@ -29,8 +47,7 @@ const Navbar = () => {
           className="logo"
         />
       </div>
-      
-      {/* Si estás en la home, `Link` funciona normalmente. Si estás en login, redirige primero y luego hace scroll */}
+
       {window.location.pathname === "/login" || window.location.pathname === "/join-now" ? (
         <>
           <button className="navbar-logo" onClick={() => handleNavigation("school")}>School</button>
