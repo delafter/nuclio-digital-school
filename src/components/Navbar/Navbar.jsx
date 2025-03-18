@@ -41,7 +41,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
+    <nav
+      style={{
+        backgroundColor: showNavbar
+          ? "rgba(0, 0, 0, 0.8)"
+          : "rgba(0, 0, 0, 0.5)",
+        transition: "background-color 0.5s",
+        position: "fixed",
+        width: "100%",
+        zIndex: "1000",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "10px 20px",
+        top: "0",
+        left: "0",
+      }}
+      className={`navbar ${showNavbar ? "show" : "hide"}`}
+    >
       <div className="navbar-logo" onClick={handleHome}>
         <img
           style={{

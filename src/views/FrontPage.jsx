@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/School.css";
+import "../styles/FrontPage.css";
 import BlockChain from "../assets/images/product-images/Blockchain.jpg";
 
 const FrontPage = () => {
