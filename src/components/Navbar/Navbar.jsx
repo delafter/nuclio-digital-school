@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
+import Logo from "../../assets/images/product-images/logoNuclio.jpg";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -11,17 +12,17 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setShowNavbar(false);  // Cuando el scroll baja, ocultamos el navbar
+        setShowNavbar(false); // Cuando el scroll baja, ocultamos el navbar
       } else {
-        setShowNavbar(true);   // Cuando el scroll sube, mostramos el navbar
+        setShowNavbar(true); // Cuando el scroll sube, mostramos el navbar
       }
-      lastScrollY = window.scrollY;  // Actualizamos la posición del scroll
+      lastScrollY = window.scrollY; // Actualizamos la posición del scroll
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);  // Limpiamos el evento cuando el componente se desmonte
-  }, []);  // Este useEffect se ejecuta solo una vez al montarse el componente
+    return () => window.removeEventListener("scroll", handleScroll); // Limpiamos el evento cuando el componente se desmonte
+  }, []); // Este useEffect se ejecuta solo una vez al montarse el componente
 
   const handleNavigation = (path) => {
     if (
@@ -43,11 +44,24 @@ const Navbar = () => {
     <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
       <div className="navbar-logo" onClick={handleHome}>
         <img
-          style={{ width: "60px", height: "50px" }}
-          src=""
+          style={{
+            width: "70px",
+            height: "70px",
+            borderRadius: "50%",
+            border: "3px solid white",
+          }}
+          src={Logo}
           alt="logo"
           className="logo"
         />
+        <span
+          style={{
+            marginLeft: "10px",
+            fontWeight: "bold",
+          }}
+        >
+          Nuclio Digital School
+        </span>
       </div>
 
       {window.location.pathname === "/login" ||

@@ -22,13 +22,23 @@ const School = () => {
 
   return (
     <div
+    
       id="carouselExampleIndicators"
       className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div className="carousel-indicators">
+      <div 
+     
+      className="carousel-indicators">
         {images.map((_, index) => (
           <button
+          style={{
+            backgroundColor: currentIndex === index ? "#4A4A4A" : "gray",
+            width: "10px",
+            height: "10px",
+            borderRadius: "50%",
+            border: "none"
+          }}
             type="button"
             key={index}
             data-bs-target="#carouselExampleIndicators"
@@ -40,7 +50,9 @@ const School = () => {
           ></button>
         ))}
       </div>
-      <div className="carousel-inner">
+      <div 
+      
+      className="carousel-inner">
         {images.map((image, index) => (
           <div
             className={`carousel-item ${
@@ -67,6 +79,7 @@ const School = () => {
         <span className="visually-hidden">Previous</span>
       </button>
       <button
+       
         className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleIndicators"
@@ -74,7 +87,8 @@ const School = () => {
         onClick={goToNext}
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
+        <span
+         className="visually-hidden">Next</span>
       </button>
     </div>
   );

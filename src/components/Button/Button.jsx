@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Button.css";
+import Logo from "../../assets/images/product-images/logoNuclio.jpg";
 
 const Button = () => {
   const [showButton, setShowButton] = useState(false);
@@ -19,13 +20,16 @@ const Button = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Función para hacer scroll manualmente
-  const scrollToSection = (id) => {
+  
+  const scrollToSection = (id, offset = 0) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const yOffset = section.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top: yOffset, behavior: "smooth" });
     }
   };
+  
+ 
 
   return (
     <div className={`button-container ${showButton ? "show" : "hide"}`}>
@@ -34,6 +38,9 @@ const Button = () => {
       <button className="button-button" onClick={() => scrollToSection("faculty")}>Faculty</button>
       <button className="button-button" onClick={() => scrollToSection("content")}>Content</button>
       <button className="button-button" onClick={() => scrollToSection("career-talent")}>Career Talent</button>
+      <button className="button-button" onClick={() => scrollToSection("front-page", -110)}> <img
+        style={{ height:"30px", width:"30px" }}
+        src={Logo} alt="Logo" className="logo-image" /></button>
     </div>
   );
 };
