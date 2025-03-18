@@ -8,6 +8,7 @@ import Faculty from "./views/Faculty";
 import Content from "./views/Content";
 import CareerTalent from "./views/CareerTalent";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 
 
