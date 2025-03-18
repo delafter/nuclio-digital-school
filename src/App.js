@@ -1,17 +1,23 @@
 import React from "react";
 import "./App.css";
 import "./components/Navbar/Navbar.jsx";
+import FrontPage from "./views/FrontPage";
 import School from "./views/School";
 import Master from "./views/Master";
 import Faculty from "./views/Faculty";
 import Content from "./views/Content";
 import CareerTalent from "./views/CareerTalent";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
   return (
    
     <div className="App">
+      <div id="front-page">
+        <FrontPage />
+      </div>
       
       <div id="school">
         <School />

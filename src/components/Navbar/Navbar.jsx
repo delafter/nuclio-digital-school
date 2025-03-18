@@ -11,17 +11,17 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setShowNavbar(false);
+        setShowNavbar(false);  // Cuando el scroll baja, ocultamos el navbar
       } else {
-        setShowNavbar(true);
+        setShowNavbar(true);   // Cuando el scroll sube, mostramos el navbar
       }
-      lastScrollY = window.scrollY;
+      lastScrollY = window.scrollY;  // Actualizamos la posición del scroll
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => window.removeEventListener("scroll", handleScroll);  // Limpiamos el evento cuando el componente se desmonte
+  }, []);  // Este useEffect se ejecuta solo una vez al montarse el componente
 
   const handleNavigation = (path) => {
     if (
@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}> 
+    <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>
       <div className="navbar-logo" onClick={handleHome}>
         <img
           style={{ width: "60px", height: "50px" }}

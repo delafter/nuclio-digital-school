@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
 import "./Button.css";
 
 const Button = () => {
@@ -20,13 +19,21 @@ const Button = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Función para hacer scroll manualmente
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={`button-container ${showButton ? "show" : "hide"}`}>
-      <Link className="button-button" to="school" smooth={true} duration={500}>School</Link>
-      <Link to="master" smooth={true} duration={500}>Master</Link>
-      <Link to="faculty" smooth={true} duration={500}>Faculty</Link>
-      <Link to="content" smooth={true} duration={500}>Content</Link>
-      <Link to="career-talent" smooth={true} duration={500}>Career Talent</Link>
+      <button className="button-button" onClick={() => scrollToSection("school")}>School</button>
+      <button className="button-button" onClick={() => scrollToSection("master")}>Master</button>
+      <button className="button-button" onClick={() => scrollToSection("faculty")}>Faculty</button>
+      <button className="button-button" onClick={() => scrollToSection("content")}>Content</button>
+      <button className="button-button" onClick={() => scrollToSection("career-talent")}>Career Talent</button>
     </div>
   );
 };
