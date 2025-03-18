@@ -40,7 +40,7 @@ html, body {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
    
-    background-color: rgba(3, 3, 3, 0.7); /* Fondo semitransparente de las flechas */
+    background-color: rgba(3, 3, 3, 0.7); 
     border-radius: 10px; /* Bordes redondeados */
     color: white; /* Color del icono */
     height: 2px;
