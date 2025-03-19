@@ -37,7 +37,7 @@ const Button = () => {
       <button className="button-button" onClick={() => scrollToSection("master")}>Master</button>
       <button className="button-button" onClick={() => scrollToSection("faculty")}>Faculty</button>
       <button className="button-button" onClick={() => scrollToSection("content")}>Content</button>
-      <button className="button-button" onClick={() => scrollToSection("career-talent")}>Career Talent</button>
+      <button className="button-button" onClick={() => scrollToSection("career-talent")}>Career & Talent</button>
       <button className="button-button" onClick={() => scrollToSection("front-page", -110)}> <img
         style={{ height:"30px", width:"30px" }}
         src={Logo} alt="Logo" className="logo-image" /></button>

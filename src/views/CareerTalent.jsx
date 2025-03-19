@@ -1,11 +1,15 @@
 import React from "react";
 import "../styles/CareerTalent.css";
+import CareerTalentImage from "../assets/images/product-images/Career&Talent.jpg";
 
 const CareerTalent = () => {
   return (
-    <div className="career-talent-container">
-      <h1>Career Talent</h1>
-      <p>Welcome to the Career Talent page!</p>
+    <div className="school-container">
+      <img
+        src={CareerTalentImage}
+        className="career-talent-image"
+        alt="Career&Talent"
+      />
     </div>
   );
 };

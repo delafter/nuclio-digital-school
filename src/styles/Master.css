@@ -1,5 +1,45 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+  }
+  
+
 .master-container {
-    background-color: blue;
-    text-align: center;
-    padding: 200px;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: auto;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex;
+  position: absolute; /* Posiciona los botones fuera del flujo del contenido */
+  bottom: 0; /* Los coloca en la parte inferior */
+  z-index: 5; /* Asegura que los botones estén por encima del contenido */
+  width: 3rem; /* Tamaño ajustado para los botones */
+  height: 3rem; /* Tamaño ajustado para los botones */
+  align-items: center; /* Centra las flechas dentro de los botones */
+  justify-content: center; /* Centra las flechas dentro de los botones */
+}
+
+.carousel-control-prev {
+  left: 0; /* Pegado al borde izquierdo */
+}
+
+.carousel-control-next {
+  right: 0; /* Pegado al borde derecho */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+ 
+  background-color: rgba(3, 3, 3, 0.7); 
+  border-radius: 10px; /* Bordes redondeados */
+  color: white; /* Color del icono */
+  height: 2px;
+  width: 2px;
+  padding:  20px; /* Espaciado interno del icono */
+}
+
