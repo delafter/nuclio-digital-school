@@ -34,7 +34,7 @@ form {
     padding: 0 10px;
     margin-bottom: 10px !important;
     box-shadow: inset 0px 4px 8px rgba(10, 0, 1, 0.2);
-    /* Sombra interna arriba */
+   
 }
 
 .input-email:focus,

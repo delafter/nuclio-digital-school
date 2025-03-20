@@ -15,31 +15,31 @@ html, body {
 .carousel-control-prev,
 .carousel-control-next {
   display: flex;
-  position: absolute; /* Posiciona los botones fuera del flujo del contenido */
-  bottom: 0; /* Los coloca en la parte inferior */
-  z-index: 5; /* Asegura que los botones estén por encima del contenido */
-  width: 3rem; /* Tamaño ajustado para los botones */
-  height: 3rem; /* Tamaño ajustado para los botones */
-  align-items: center; /* Centra las flechas dentro de los botones */
-  justify-content: center; /* Centra las flechas dentro de los botones */
+  position: absolute; 
+  bottom: 0; 
+  z-index: 5; 
+  width: 3rem; 
+  height: 3rem; 
+  align-items: center; 
+  justify-content: center; 
 }
 
 .carousel-control-prev {
-  left: 0; /* Pegado al borde izquierdo */
+  left: 0; 
 }
 
 .carousel-control-next {
-  right: 0; /* Pegado al borde derecho */
+  right: 0; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
  
   background-color: rgba(3, 3, 3, 0.7); 
-  border-radius: 10px; /* Bordes redondeados */
-  color: white; /* Color del icono */
+  border-radius: 10px; 
+  color: white; 
   height: 2px;
   width: 2px;
-  padding:  20px; /* Espaciado interno del icono */
+  padding:  20px; 
 }
 

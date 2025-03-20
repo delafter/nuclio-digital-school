@@ -16,8 +16,9 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <h1>Login</h1>
-       {/*    <p>Email:</p> */}
-          <input className="input-email"
+
+          <input
+            className="input-email"
             type="email"
             value={email}
             placeholder="Email"
@@ -26,17 +27,19 @@ const Login = () => {
           />
         </div>
         <div>
-        {/*   <p>Password:</p> */}
-          <input className="input-password"
+          <input
+            className="input-password"
             type="password"
             value={password}
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          
-          <div >
-            <a className="forgot-password" href="/">Forgot password or email?</a>
+
+          <div>
+            <a className="forgot-password" href="/">
+              Forgot password or email?
+            </a>
           </div>
         </div>
         <button className="form-buttom-login" type="submit">

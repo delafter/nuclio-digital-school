@@ -64,7 +64,7 @@ const Navbar = () => {
             width: "70px",
             height: "70px",
             borderRadius: "50%",
-            border: "3px solid white",
+            border: "6px solid white",
           }}
           src={Logo}
           alt="logo"
