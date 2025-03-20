@@ -1,3 +1,72 @@
-.login-container{
-    margin-top: 150px;
+.login-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/images/product-images/BlockchainFondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 80px !important;
+    border-radius: 10px;
+    width: 430px;
+    height: 550px;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px !important;
+
+}
+
+p {
+  
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 1px;
+    padding: 0;
+
+}
+
+h1 {
+
+    color: black;
+    font-weight: bold !important;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-buttom {
+    width: 350px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-buttom:hover {
+    background-color: #45a049;
 }

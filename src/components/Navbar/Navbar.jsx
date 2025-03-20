@@ -112,7 +112,7 @@ const Navbar = () => {
             className="navbar-logo"
             onClick={() => handleNavigation("career-talent")}
           >
-            Career Talent
+            Career & Talent
           </button>
         </>
       ) : (
@@ -155,7 +155,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Career Talent
+            Career & Talent
           </Link>
         </>
       )}

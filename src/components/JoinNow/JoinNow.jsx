@@ -3,8 +3,7 @@ import './JoinNow.css';
 
 const JoinNow = () => {
     return (
-        <div className="join-now">
-            <h1>Join Now</h1>
+        <div className="joinNow-container">
             <form>
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
