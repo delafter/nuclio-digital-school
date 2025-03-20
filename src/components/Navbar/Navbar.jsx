@@ -84,31 +84,31 @@ const Navbar = () => {
       window.location.pathname === "/join-now" ? (
         <>
           <button
-            className="navbar-logo-letras"
+            className="navbar-logo"
             onClick={() => handleNavigation("school")}
           >
             School
           </button>
           <button
-            className="navbar-logo-letras"
+            className="navbar-logo"
             onClick={() => handleNavigation("master")}
           >
             Master
           </button>
           <button
-            className="navbar-logo-letras"
+            className="navbar-logo"
             onClick={() => handleNavigation("faculty")}
           >
             Faculty
           </button>
           <button
-            className="navbar-logo-letras"
+            className="navbar-logo"
             onClick={() => handleNavigation("content")}
           >
             Content
           </button>
           <button
-            className="navbar-logo-letras"
+            className="navbar-logo"
             onClick={() => handleNavigation("career-talent")}
           >
             Career & Talent
@@ -117,7 +117,7 @@ const Navbar = () => {
       ) : (
         <>
           <Link
-            className="navbar-logo-letras"
+            className="navbar-logo"
             to="school"
             smooth={true}
             duration={500}
@@ -125,7 +125,7 @@ const Navbar = () => {
             School
           </Link>
           <Link
-            className="navbar-logo-letras"
+            className="navbar-logo"
             to="master"
             smooth={true}
             duration={500}
@@ -133,7 +133,7 @@ const Navbar = () => {
             Master
           </Link>
           <Link
-            className="navbar-logo-letras"
+            className="navbar-logo"
             to="faculty"
             smooth={true}
             duration={500}
@@ -141,7 +141,7 @@ const Navbar = () => {
             Faculty
           </Link>
           <Link
-            className="navbar-logo-letras"
+            className="navbar-logo"
             to="content"
             smooth={true}
             duration={500}
@@ -149,7 +149,7 @@ const Navbar = () => {
             Content
           </Link>
           <Link
-            className="navbar-logo-letras"
+            className="navbar-logo"
             to="career-talent"
             smooth={true}
             duration={500}
