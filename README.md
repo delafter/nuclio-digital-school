@@ -84,7 +84,7 @@ Si quieres contribuir, sigue estos pasos:
 5. Abre un **Pull Request**.
 
 ## 📧 Contacto
-Si tienes dudas o sugerencias, puedes contactarme en: [tu-email@correo.com](mailto:tu-email@correo.com).
+Si tienes dudas o sugerencias, puedes contactarme en: [delafter@gmail.com](mailto:delafter@gmail.com).
 
 ---
 ✨ ¡Gracias por usar esta aplicación! ✨
