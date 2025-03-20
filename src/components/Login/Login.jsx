@@ -15,30 +15,33 @@ const Login = () => {
     <div className="login-container">
       <form onSubmit={handleSubmit}>
         <div>
-          <h1>Create your acount</h1>
-          <p>Firts Name</p>
-          <input type="text" required />
-          <p>Last Name</p>
-          <input type="text" required />
-          <p>E-mail Address</p>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
+          <h1>Login</h1>
+       {/*    <p>Email:</p> */}
+          <input className="input-email"
             type="email"
+            value={email}
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <p>Password</p>
-          <input
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            required
-          />
-          <p>Phone Optional </p>
-
-          <input type="text" required />
-          <button className="form-buttom" type="submit">
-            Create Account
-          </button>
         </div>
+        <div>
+        {/*   <p>Password:</p> */}
+          <input className="input-password"
+            type="password"
+            value={password}
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          
+          <div >
+            <a className="forgot-password" href="/">Forgot password or email?</a>
+          </div>
+        </div>
+        <button className="form-buttom-login" type="submit">
+          Login
+        </button>
       </form>
     </div>
   );

@@ -24,18 +24,28 @@ form {
 
 }
 
-input {
+
+.input-email,
+.input-password {
     width: 350px;
-    height: 40px;
+    height: 50px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 40px;
     padding: 0 10px;
     margin-bottom: 10px !important;
+    box-shadow: inset 0px 4px 8px rgba(10, 0, 1, 0.2);
+    /* Sombra interna arriba */
+}
 
+.input-email:focus,
+.input-password:focus {
+    outline: none;
+    border: 2px solid #4CAF50;
+    box-shadow: 0px 0px 8px rgba(10, 0, 1, 0.1);
 }
 
 p {
-  
+
     color: black;
     font-weight: bold;
     font-size: 15px;
@@ -56,17 +66,34 @@ h1 {
     align-items: center;
 }
 
-.form-buttom {
+.form-buttom-login {
+    margin-top: 100px !important;
     width: 350px;
-    height: 40px;
+    height: 60px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     margin-top: 20px;
 }
 
-.form-buttom:hover {
+.form-buttom-login:hover {
     background-color: #45a049;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 80px;
+    letter-spacing: 1px;
+
+
+}
+
+.forgot-password:hover {
+    color: black;
+    text-decoration: none;
 }

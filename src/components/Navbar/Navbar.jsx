@@ -12,18 +12,17 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setShowNavbar(false); // Cuando el scroll baja, ocultamos el navbar
+        setShowNavbar(false);
       } else {
-        setShowNavbar(true); // Cuando el scroll sube, mostramos el navbar
+        setShowNavbar(true);
       }
-      lastScrollY = window.scrollY; // Actualizamos la posición del scroll
+      lastScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll); // Limpiamos el evento cuando el componente se desmonte
-  }, []); // Este useEffect se ejecuta solo una vez al montarse el componente
-
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const handleNavigation = (path) => {
     if (
       window.location.pathname === "/login" ||
@@ -85,31 +84,31 @@ const Navbar = () => {
       window.location.pathname === "/join-now" ? (
         <>
           <button
-            className="navbar-logo"
+            className="navbar-logo-letras"
             onClick={() => handleNavigation("school")}
           >
             School
           </button>
           <button
-            className="navbar-logo"
+            className="navbar-logo-letras"
             onClick={() => handleNavigation("master")}
           >
             Master
           </button>
           <button
-            className="navbar-logo"
+            className="navbar-logo-letras"
             onClick={() => handleNavigation("faculty")}
           >
             Faculty
           </button>
           <button
-            className="navbar-logo"
+            className="navbar-logo-letras"
             onClick={() => handleNavigation("content")}
           >
             Content
           </button>
           <button
-            className="navbar-logo"
+            className="navbar-logo-letras"
             onClick={() => handleNavigation("career-talent")}
           >
             Career & Talent
@@ -118,7 +117,7 @@ const Navbar = () => {
       ) : (
         <>
           <Link
-            className="navbar-logo"
+            className="navbar-logo-letras"
             to="school"
             smooth={true}
             duration={500}
@@ -126,7 +125,7 @@ const Navbar = () => {
             School
           </Link>
           <Link
-            className="navbar-logo"
+            className="navbar-logo-letras"
             to="master"
             smooth={true}
             duration={500}
@@ -134,7 +133,7 @@ const Navbar = () => {
             Master
           </Link>
           <Link
-            className="navbar-logo"
+            className="navbar-logo-letras"
             to="faculty"
             smooth={true}
             duration={500}
@@ -142,7 +141,7 @@ const Navbar = () => {
             Faculty
           </Link>
           <Link
-            className="navbar-logo"
+            className="navbar-logo-letras"
             to="content"
             smooth={true}
             duration={500}
@@ -150,7 +149,7 @@ const Navbar = () => {
             Content
           </Link>
           <Link
-            className="navbar-logo"
+            className="navbar-logo-letras"
             to="career-talent"
             smooth={true}
             duration={500}
