@@ -4,7 +4,9 @@ import BlockChain from "../assets/images/product-images/Blockchain.jpg";
 const FrontPage = () => {
   return (
     <div className="school-container">
-      <img src={BlockChain} alt="blockchain" />
+      <img
+      style={{ height: "150%"}}
+      src={BlockChain} alt="blockchain" />
     </div>
   );
 };
