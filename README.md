@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 📌 App de Nuclio Digital School
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es la documentación del proyecto **App de Nuclio Digital School**, que muestra imágenes de la plataforma y sus secciones disponibles.
 
-## Available Scripts
+## 🚀 Tecnologías Utilizadas
 
-In the project directory, you can run:
+- **Frontend:** React
+- **Estilos:** CSS / Bootstrap
+- **Autenticación:** Implementación de login y creación de usuario (actualmente solo almacena los datos en `console.log`)
+
+## 📦 Instalación
+
+Para ejecutar el proyecto localmente, sigue estos pasos:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-repo.git
+   ```
+2. Accede al directorio del proyecto:
+   ```bash
+   cd app-nuclio-digital-school
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Inicia la aplicación en modo desarrollo:
+   ```bash
+   npm start
+   ```
+   La aplicación estará disponible en [http://localhost:3000](http://localhost:3000).
+
+## 📜 Scripts Disponibles
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Inicia la aplicación en modo desarrollo.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ejecuta las pruebas de la aplicación.
 
 ### `npm run build`
+Compila la aplicación para producción en la carpeta `build`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Estructura del Proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+/src
+  ├── components/       # Componentes reutilizables
+  ├── views/            # Páginas principales
+  ├── assets/           # Imágenes y archivos estáticos
+  ├── App.js            # Componente principal
+  ├── index.js          # Punto de entrada
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📌 Funcionalidades Principales
 
-### `npm run eject`
+- 🔹 **Login de Usuarios** - Permite autenticarse en la plataforma (los datos solo se almacenan en `console.log`).
+- 🔹 **Registro de Usuarios** - Permite crear una nueva cuenta en la plataforma (los datos solo se almacenan en `console.log`).
+- 🔹 **Visualización de Secciones** - Muestra las diferentes secciones disponibles en Nuclio Digital School.
+- 🔹 **Carga de Imágenes** - Se muestran imágenes ilustrativas de la plataforma.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Despliegue
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Esta aplicación se puede desplegar en plataformas como:
+- **Vercel**
+- **Netlify**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠 Contribuir
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Si quieres contribuir, sigue estos pasos:
+1. Haz un fork del repositorio.
+2. Crea una rama con una nueva funcionalidad:
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+3. Haz commit de tus cambios:
+   ```bash
+   git commit -m "Agregada nueva funcionalidad"
+   ```
+4. Sube la rama a tu fork:
+   ```bash
+   git push origin feature/nueva-funcionalidad
+   ```
+5. Abre un **Pull Request**.
 
-## Learn More
+## 📧 Contacto
+Si tienes dudas o sugerencias, puedes contactarme en: [tu-email@correo.com](mailto:tu-email@correo.com).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
+✨ ¡Gracias por usar esta aplicación! ✨
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
